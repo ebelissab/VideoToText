@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VideoToText</title>
+<style>
+body {
+background-color: #f2f2f2;
+color: #333;
+font-family: Arial, sans-serif;
+}
+.container {
+width: 100%;
+margin: 0 auto;
+text-align: center;
+padding: 50px;
+background-color: #fff;
+}
+.form-container {
+border: 2px dashed #ff9900;
+padding: 20px;
+margin-top: 50px;
+}
+.form-container h2 {
+color: #ff9900;
+}
+label {
+color: #333;
+}
+button {
+background-color: #ff9900;
+color: #fff;
+}
+button:hover {
+background-color: #ff6600;
+}
+input[type="file"] {
+display: block;
+margin: 0 auto;
+width: 200px;
+padding: 10px;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+background-color: #ff9900;
+color: #fff;
+}
+input[type="file"]:hover {
+background-color: #ff6600;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<h1>VideoToText</h1>
+<div class="form-container">
+<form id="transcription-form" method="post" enctype="multipart/form-data">
+<h2>Arrastre aquí el contenido</h2>
+<input type="file" id="file-input" name="file" accept="audio/*,video/*">
+<label for="file-input" style="cursor: pointer;">Arrastre aquí el contenido</label>
+<br>
+<button type="submit">Guardar en la base de datos</button>
+</form>
+</div>
+</div>
+</body>
+</html>
