@@ -1,6 +1,7 @@
 import whisper
 
-model = whisper.load_model("base")
-result = model.transcribe("/home/gresuto/Descargas/Primer Video Legítimo (enhanced y mejorado 2).mp3")
+def audio_a_texto(ruta):
+    model = whisper.load_model("base")
+    result = model.transcribe(ruta)
 
-print(result["text"])
+    print(result["text"])
