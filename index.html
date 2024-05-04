@@ -1,101 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VideoToText</title>
 <style>
 body {
-background-image: url('audiovisual-background.jpg');
-background-size: cover;
-background-position: center;
-color: #333;
-font-family: 'Arial Black', Gadget, sans-serif;
+  background-image: url("fondopan.png");
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 .container {
-width: 100%;
-margin: 0 auto;
-text-align: center;
-padding: 50px;
-background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px;
+  
 }
 .form-container {
-border: 2px solid #ff9900;
-padding: 20px;
-margin-top: 50px;
+  border: 2px dashed #ff9900;
+  padding: 20px;
+  margin-top: 50px;
 }
 .form-container h2 {
-color: #ff9900;
+  color: #ff9900;
 }
 label {
-color: #333;
+  color: #333;
 }
 button {
-background-color: #ff9900;
-color: #fff;
-padding: 10px 20px;
-border: none;
-border-radius: 5px;
-font-family: 'Arial Black', Gadget, sans-serif;
-text-transform: uppercase;
-cursor: pointer;
+  background-color: #ff9900;
+  color: #fff;
 }
 button:hover {
-background-color: #ff6600;
+  background-color: #ff6600;
 }
 input[type="file"] {
-display: block;
-margin: 0 auto;
-width: 200px;
-padding: 10px;
-font-size: 16px;
-border: none;
-border-radius: 5px;
-background-color: #ff9900;
-color: #fff;
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff9900;
+  color: #fff;
 }
 input[type="file"]:hover {
-background-color: #ff6600;
+  background-color: #ff6600;
+}
+#header-carousel {
+  position:center;
+}
+#header-carousel img {
+  position:center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 </style>
 </head>
-
-
 <body>
 <div class="container">
-<h1>VideoToText</h1>
-<div class="form-container">
-<form id="transcription-form" method="post" enctype="multipart/form-data">
-<h2>Arrastre aquí el contenido</h2>
-<input type="file" id="file-input" name="file" accept="audio/*,video/*">
-<label for="file-input" style="cursor: pointer;">Arrastre aquí el contenido</label>
-<br>
-<button type="submit">Guardar en la base de datos</button>
-</form>
-</div>
-</div>
-</body>
-
-<!-- Footer Start -->
-<div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
-    <div class="row pt-5">
-        <div class="col-lg-4 col-md-12 mb-5">
-            <h1 class="mb-3 display-5 text-capitalize text-white"><span class="text-primary">Video</span>ToText</h1>
-            <p class="m-0">"La IA en transcripción de audios hace que el sonido se convierta en palabras."</p>
-        </div>
-        <div class="col-lg-8 col-md-12">
-            <div class="row">
-                <div class="col-md-4 mb-5">
-                    <h5 class="text-primary mb-4">Información de Contacto</h5>
-                    <p><i class="fa fa-map-marker-alt mr-2"></i>Carretera San Antonio de los Baños Km 2½, Rpto. Torrens, La Habana</p>
-                    <p><i class="fa fa-phone-alt mr-2"></i>7855555</p>
-                    <p><i class="fa fa-envelope mr-2"></i>din@uci.cu</p>
-                    
-                </div>
+  <div id="header-carousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+             <div class="p-3" style="max-width: 900px;">
+                  <h1>VideoToText</h1>
+                   <div class="form-container">
+                     <form id="transcription-form" method="post" enctype="multipart/form-data">
+                      <h2>Arrastre aquí el contenido</h2>
+                      <input type="file" id="file-input" name="file" accept="audio/*,video/*">
+                       <label for="file-input" style="cursor: pointer;">Arrastre aquí el contenido</label>
+                        <br>
+                       </form>
+                    </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Footer End -->
+
+<div class="contact-info">
+  <h2>Información de contacto</h2>
+  <p>Teléfono: 123-456-7890</p>
+  <p>Email: din@uci.com</p>
+  <p>Dirección: Carretera San Antonio de los Baños Km 2½, Rpto. Torrens, La Habana</p>
+</div>
+</body>
 </html>
